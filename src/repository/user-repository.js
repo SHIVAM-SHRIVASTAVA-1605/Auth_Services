@@ -57,6 +57,7 @@ class UserRepository {
                     StatusCodes.NOT_FOUND
                 )
             }
+            return user;
         } catch(error) {
             console.log("Something went wrong on the repository layer");
             throw error;
